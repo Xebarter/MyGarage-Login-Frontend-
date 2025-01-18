@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f7f8fa, #e6eef7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  padding: 20px; /* Added padding for smaller screens */
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Text Styles */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #0069d9;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 105, 217, 0.2);
+}
+
+/* Buttons */
+.login-button,
+.google-login {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-button {
+  background-color: #0069d9;
+  color: #fff;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: #0053b3;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.google-login:hover {
+  background-color: #f7f7f7;
+  border-color: #bbb;
+}
+
+.google-login img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Links */
+a {
+  color: #0069d9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0053b3;
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Create Account Link */
+.create-account {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      padding: 15px;
+      border-radius: 12px;
+  }
+
+  .logo {
+      width: 100px;
+      margin: 10px auto;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 13px;
+  }
+
+  input {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .login-button,
+  .google-login {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  .logo {
+      width: 80px;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Background */
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: url('3.png') no-repeat center center/cover; /* Full-screen background image */
+  position: relative;
+  text-align: center;
+}
+
+/* Content Styling */
+.content {
+  background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay for better text readability */
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: #ffd700; /* Gold for emphasis */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Button */
+.cta-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.landing-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2.5rem;
+  }
+
+  .subtitle {
+      font-size: 1.3rem;
+  }
+
+  .description {
+      font-size: 0.9rem;
+  }
+
+  .cta-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 2rem;
+  }
+
+  .subtitle {
+      font-size: 1.1rem;
+  }
+
+  .description {
+      font-size: 0.85rem;
+  }
+
+  .cta-button {
+      font-size: 0.85rem;
+      padding: 8px 18px;
+  }
+}
