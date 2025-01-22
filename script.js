@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     try {
         // Make POST request to backend
-        const response = await fetch('http://localhost:3000/login', {
+        const response = await fetch('https://mygarage-login-backend-2.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
