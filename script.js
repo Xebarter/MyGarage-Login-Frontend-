@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     try {
         // Make POST request to backend
-        const response = await fetch('https://mygarage-login-backend-2.onrender.com', {
+        const response = await fetch('https://mygarage-login-backend.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -22,7 +22,9 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
             // Redirect to landing page with user's name
             const userName = email.split('@')[0]; // Extract name from email as an example
-            window.location.href = `landing.html?name=${encodeURIComponent(userName)}`;
+            window.location.href = `https://my-garage-login-frontend.vercel.app/landing.html?name=${encodeURIComponent(userName)}`;
+
+
         } else {
             const error = await response.json();
             alert(`Error: ${error.message}`); // Notify user of error
